@@ -33,6 +33,7 @@ function App() {
         <Card.Header>
           <h2>Student Registration</h2>
         </Card.Header>
+
         <Card.Body className="scrollable">
           <Form
             method="POST"
