@@ -218,8 +218,9 @@ function App() {
                   }}
                 />
                 <Form.Label>
-                  I Agree to the <a href="#">Terms and Conditions</a> and{" "}
-                  <a href="#">Privacy Policy</a>
+                  I Agree to the{" "}
+                  <a href="https://www.google.com">Terms and Conditions</a> and{" "}
+                  <a href="https://www.google.com">Privacy Policy</a>
                 </Form.Label>
               </div>
               {errors.termPrivacy.length > 0 && (

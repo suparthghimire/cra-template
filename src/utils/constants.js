@@ -3,7 +3,8 @@ export const EMAIL_REGEX =
 
 export const TEXT_REGEX = /[a-zA-Z]/;
 
-export const SPECIAL_CHAR_REGEX = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+export const SPECIAL_CHAR_REGEX =
+  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 export const FILE_UPLOAD_LIMIT = 2;
 
 export function formatMbToBytes(mb) {
