@@ -48,6 +48,7 @@ function App() {
               <Form.Control
                 type="text"
                 name="name"
+                className={errors.name.length > 0 && "is-invalid"}
                 value={values.name}
                 placeholder="Enter Name"
                 onChange={(e) => setValues({ ...values, name: e.target.value })}
@@ -61,6 +62,7 @@ function App() {
               <Form.Control
                 type="text"
                 name="email"
+                className={errors.email.length > 0 && "is-invalid"}
                 value={values.email}
                 placeholder="Enter Email"
                 onChange={(e) =>
@@ -77,6 +79,7 @@ function App() {
                 type="text"
                 value={values.phone}
                 name="phone"
+                className={errors.phone.length > 0 && "is-invalid"}
                 placeholder="Phone Number"
                 onChange={(e) =>
                   setValues({ ...values, phone: e.target.value })
@@ -91,6 +94,7 @@ function App() {
               <Form.Control
                 type="password"
                 name="password"
+                className={errors.password.length > 0 && "is-invalid"}
                 value={values.password}
                 placeholder="Enter Password"
                 onChange={(e) =>
@@ -108,6 +112,7 @@ function App() {
               <Form.Control
                 type="password"
                 name="confirmPassword"
+                className={errors.confirmPassword.length > 0 && "is-invalid"}
                 value={values.confirmPassword}
                 placeholder="Re Enter Password"
                 onChange={(e) =>
@@ -127,6 +132,7 @@ function App() {
                   <Form.Check
                     type="radio"
                     name="gender"
+                    className={errors.gender.length > 0 && "is-invalid"}
                     value="m"
                     onChange={(e) =>
                       setValues({ ...values, gender: e.target.value })
@@ -139,6 +145,7 @@ function App() {
                     type="radio"
                     value="f"
                     name="gender"
+                    className={errors.gender.length > 0 && "is-invalid"}
                     onChange={(e) =>
                       setValues({ ...values, gender: e.target.value })
                     }
@@ -150,6 +157,7 @@ function App() {
                     type="radio"
                     value="o"
                     name="gender"
+                    className={errors.gender.length > 0 && "is-invalid"}
                     onChange={(e) =>
                       setValues({ ...values, gender: e.target.value })
                     }
@@ -165,6 +173,7 @@ function App() {
               <Form.Label>Select Class: {values.class}</Form.Label>
               <Form.Select
                 name="class"
+                className={errors.class.length > 0 && "is-invalid"}
                 value={values.class}
                 onChange={(e) =>
                   setValues({ ...values, class: e.target.value })
@@ -191,6 +200,7 @@ function App() {
               <Form.Control
                 type="file"
                 name="image"
+                className={errors.image.length > 0 && "is-invalid"}
                 onChange={(_) => {
                   const file = document.querySelector("#image").files[0];
                   setValues({
@@ -213,6 +223,7 @@ function App() {
               <div className="d-flex gap-2">
                 <Form.Check
                   name="termPrivacy"
+                  className={errors.termPrivacy.length > 0 && "is-invalid"}
                   onChange={(e) => {
                     setValues({ ...values, termPrivacy: e.target.checked });
                   }}
