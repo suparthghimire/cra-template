@@ -173,7 +173,7 @@ function App() {
                   return (
                     <option
                       key={`class-option-${i}`}
-                      defaultValue={i == 0}
+                      defaultValue={i === 0}
                       value={i + 1}
                     >
                       {i + 1}
