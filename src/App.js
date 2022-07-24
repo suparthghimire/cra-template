@@ -29,11 +29,11 @@ function App() {
 
   return (
     <Container>
-      <Card className="scrollable">
+      <Card>
         <Card.Header>
           <h2>Student Registration</h2>
         </Card.Header>
-        <Card.Body>
+        <Card.Body className="scrollable">
           <Form
             method="POST"
             encType="multipart/form-data"
